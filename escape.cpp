@@ -1,8 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int arr[10] = {1, };
+int arr[20];
+int fib(int a);
 
 int main(){
-	for (int i = 0; i<10; i++) cout << arr[i];
+	int index = 0;
+	while (true){
+		int x;
+		cin >> x;
+		if (x == 0) break;
+		else arr[index] = x;
+		index++;
+	}
+	fib(10);
 }
+]
